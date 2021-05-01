@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include "Figure.h"
 class Triangle:public Figure {
@@ -8,7 +9,7 @@ private:
 public:
      double Perimeter() override;
     void print() override;
-    Triangle(double &side1,double &size2, double &size3);
+    Triangle(double side1, double size2, double size3);
 
 };
 
