@@ -2,9 +2,9 @@
 #include <iostream>
 class Figure{
 protected:
-    double d;
-    double e;
-    double f;
+    double a;
+    double b;
+    double c;
 public:
 virtual double Perimeter()=0;
 virtual void print();

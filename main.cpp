@@ -9,10 +9,12 @@ int main() {
     fg.push_back(test1);
     Figure* const test2 = new Square(4.0, 5.0);
     fg.push_back(test2);
-    for (int i = 0; i < fg.size(); ++i) {
-        std::cout<<"Perimetr: "<<fg[i]->Perimeter()<<std::endl;
-        fg[i]->print();
+    for (auto & i : fg) {
+        std::cout<<"Perimetr: "<<i->Perimeter()<<std::endl;
+        i->print();
         std::cout << "----------------------" << std::endl;
     }
+    delete(test1);
+    delete (test2);
     return 0;
 }
