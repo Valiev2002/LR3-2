@@ -1,13 +1,12 @@
 #pragma once
-#include <iostream>
 #include "Figure.h"
 class Square:public Figure {
-private:
+protected:
     double a;
     double b;
 public:
     double Perimeter() override;
-    void print() override;
+   virtual void print();
     Square(double code_red,double laskovaya_moya);
 
 };
